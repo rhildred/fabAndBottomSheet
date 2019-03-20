@@ -1,8 +1,8 @@
 <head>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link rel="stylesheet" href="main.css" />
-
 <body>
+    <div id="grocerylist"></div>
 	<div class="fixed-action-btn">
 		<a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
 			href="#modal1"><i class="material-icons">add</i></a>
@@ -10,11 +10,22 @@
 	<!-- Modal Structure -->
 	<div id="modal1" class="modal bottom-sheet">
 		<div class="modal-content">
-			<h4>Modal Header</h4>
-			<p>A bunch of text</p>
+			<h4>I need this</h4>
+            <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                <input placeholder="item name" id="item_name" type="text" class="validate">
+                <label for="item_name">Item Name</label>
+                </div>
+                <div class="input-field col s6">
+                <input placeholder="Store Available" id="item_store" type="text" class="validate">
+                <label for="item_store">Store Available</label>
+                </div>
+            </div>
+            </form>
 		</div>
 		<div class="modal-footer">
-			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+			<a id="add_list" href="#!" class="modal-close waves-effect waves-green btn-flat">Add To List</a>
 		</div>
 	</div>
 
